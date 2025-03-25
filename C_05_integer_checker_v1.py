@@ -30,4 +30,8 @@ def num_check(question):
 while True:
     print()
 
+    #asks user for an integer
+    my_num = num_check('Choose a number that is more than zero')
+    print(f'You chose {my_num}')
+
 
