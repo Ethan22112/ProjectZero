@@ -7,8 +7,14 @@ def string_check(question, valid_ans_list):
 
         response = input(question).lower()
 
+         # checks if the response is exactly the same as the word
+        if response in valid_ans_list:
+            return item
+
+        
+
         for item in valid_ans_list:
-            # checks if the response is either exactly the same as the word
+            # checks if the response is exactly the same as the word
             if response == item:
                 return item
 
